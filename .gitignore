@@ -1,0 +1,26 @@
+# Private OpenAI exports
+*.zip
+conversations.json
+chat.html
+message_feedback.json
+user.json
+
+# Private memory files
+MEMORIA_FELIU_UNIFICADA.md
+MEMORIA_FELIU_UNIFICADA.txt
+KNOWLEDGE_GRAPH_EXPANDIDO.json
+*.backup
+
+# Local indexes
+*.bin
+*.faiss
+chunks.json
+index/
+
+# Secrets and local env
+.env
+*.sqlite
+*.db
+__pycache__/
+.venv/
+venv/
