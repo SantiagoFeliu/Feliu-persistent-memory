@@ -18,9 +18,7 @@ Validated project scale:
 - Local RAG index
 - Local Knowledge Graph
 - Agent integration through Codebuff / Freebuff
-- First deployment target: R2, my local operational agent
 
-Private data is not included in this repository.
 
 ## Goal
 
@@ -28,7 +26,7 @@ Build a persistent memory system that allows local AI agents to remember operati
 
 The system is designed to support:
 
-- personal operational memory
+- operational memory
 - project memory
 - decision history
 - editorial rules
@@ -157,7 +155,6 @@ Validated graph scale:
 
 ### Phase 8 - Agent Integration
 
-Integrated into R2 using:
 
 - CLAUDE.md as context loader
 - query.py for semantic retrieval
@@ -183,10 +180,6 @@ Capabilities confirmed:
 This repository does not include:
 
 - OpenAI exports
-- personal conversations
-- private memory files
-- personal identifiers
-- private knowledge graphs
 - local indexes
 - secrets
 - environment files
@@ -199,7 +192,7 @@ Only architecture, methodology and reusable tooling should be shared.
 - The hard part is curating memory quality.
 - Facts, assumptions, historical decisions and current rules must be separated.
 - Persistent memory works better when it is structured, audited and regenerated under control.
-- Local memory allows agents to preserve context without uploading private data.
+- Local memory allows agents to preserve context while maintaining local control.
 
 ## Roadmap
 
@@ -217,7 +210,6 @@ Current status: operational.
 
 First production deployment:
 
-R2 - Local Operational Agent
 
 Future objective:
 
