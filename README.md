@@ -8,13 +8,9 @@ This repository documents a real local implementation: converting years of ChatG
 
 The original system was built from a full OpenAI export.
 
-Validated project scale:
+Validated project scope:
 
-- 3,163 conversations
-- 156,135 messages
-- 6.4 GB export
-- 89.7 MB extracted text
-- Around 24,000 referenced attachments
+- Local conversation export processed offline
 - Local RAG index
 - Local Knowledge Graph
 - Agent integration through Codebuff / Freebuff
@@ -81,10 +77,7 @@ Persistent operational memory
 
 Results:
 
-- 3,163 conversations
-- 156,135 messages
-- 89.7 MB extracted text
-- Around 24,000 referenced attachments
+- Local inventory and validation performed
 
 Generated artifacts:
 
@@ -135,9 +128,7 @@ Components:
 
 Validated results:
 
-- 144 chunks
-- 768 embedding dimensions
-- sub-second retrieval
+- Retrieval validation performed with a local index
 
 ### Phase 7 - Knowledge Graph
 
@@ -150,8 +141,7 @@ Capabilities:
 
 Validated graph scale:
 
-- 124 entities
-- 78 relationships
+- Local graph with entity and relationship queries
 
 ### Phase 8 - Agent Integration
 
