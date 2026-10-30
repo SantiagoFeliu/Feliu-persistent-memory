@@ -198,10 +198,32 @@ Only architecture, methodology and reusable tooling should be shared.
 
 Current status: operational.
 
-First production deployment:
-
-
 Future objective:
 
 Persistent memory shared across multiple AI systems while keeping data local and under user control.
 
+## Evidence levels and reproducibility
+
+This repository is a **case study of a local implementation**. Its operational status describes the original local environment; it does not mean that a new clone can reproduce that environment without the private export, indexes, models and configuration.
+
+| Claim | Evidence described here | Reproducible from this public repository? |
+| --- | --- | --- |
+| Historical export processing | Project phases and local artifacts | No: source export is private |
+| Semantic retrieval | Local FAISS/Ollama validation described | Not independently established here |
+| Knowledge-graph queries | Local graph validation described | Not independently established here |
+| Recall after restart | Local restart validation described | Not independently established here |
+
+### Suggested verification for a clean-room reproduction
+
+1. Use synthetic documents, never personal ChatGPT exports.
+2. Record source identifiers and hashes before ingestion.
+3. Query known facts and deliberate negative controls; capture expected and observed results.
+4. Restart the services and repeat the same queries.
+5. Check duplicate ingestion, stale rules and missing provenance.
+6. Publish only redacted commands, versions and aggregate outcomes.
+
+**Security:** do not commit exports, embeddings, vector indexes, graph databases, tokens or machine-specific paths. This documentation is not a public benchmark or a turnkey installer.
+
+## Current status versus roadmap
+
+The phases above document historical work. Multi-agent sharing, additional model integrations and stronger provenance controls remain roadmap items until supported by published implementation evidence.
